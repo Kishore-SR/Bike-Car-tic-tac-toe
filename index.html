@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKE CAR - Tic Tac Toe</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- linking remix icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- first start popup window starts -->
+    <div class="popup" id="startPopup">
+        <h2>Choose Game Mode</h2>
+        <button id="vsBotBtn">You vs Bot <i class="ri-robot-2-fill"></i></button>
+        <div id="chooseVehicle" class="hidden">
+            <h3>Choose Your Vehicle</h3>
+            <button id="carBtn">Car <i class="ri-car-fill"></i></button>
+            <button id="bikeBtn">Bike <i class="ri-riding-fill"></i></button>
+        </div>
+        <button id="vsFriendBtn">You vs Friend <i class="ri-user-fill"></i></button>
+    </div>
+    <!-- first start popup window ends -->
+
+    <div class="game hidden" id="game">
+        <h1><span class="title">TIC TAC TOE</span> <br> <span class="subtext">- Bike Car Version -</span></h1>
+        <div class="turn-text" id="turnText"></div>
+        <span class="info-icon" id="infoIcon"><i class="ri-information-2-line"></i></span>
+        <div class="board" id="board"></div>
+
+        <!-- About Game - info section starts -->
+        <div class="popup hidden" id="infoPopup">
+            <span class="close" id="closeInfo"><i class="ri-close-circle-fill"
+                    style="color: #DC7171; font-size: 26px;"></i></span>
+            <h2>About Game</h2>
+            <p>This is a special customized bike-car version of Tic Tac Toe. In this version, you can play in two
+                different modes. Plus, if you win with a car or a bike, you'll learn a fun fact about cars or bikes!</p>
+            <h2>Developed By</h2>
+            <p><a href="https://www.linkedin.com/in/Kishore-SR"><i class="ri-linkedin-box-fill"></i> Kishore S R</a></p>
+            <h2>Source Code</h2>
+            <a href=""><button><i class="ri-github-fill"></i>Github</button></a>
+        </div>
+        <!-- About Game - info section ends -->
+
+        <!-- result message starts -->
+        <div class="hidden" id="resultPopup">
+            <h2 id="resultMessage"></h2>
+            <button id="playAgainBtn">PLAY AGAIN</button>
+        </div>
+        <!-- result message ends -->
+
+    </div>
+
+    <!-- For FireBase analytics -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD3qBnhDSHfl3Jd--tUVMBQ-Q6wjh3a3fo",
+          authDomain: "bike-car.firebaseapp.com",
+          projectId: "bike-car",
+          storageBucket: "bike-car.appspot.com",
+          messagingSenderId: "636398518678",
+          appId: "1:636398518678:web:215d418fa1566042229db7",
+          measurementId: "G-LP01WYNZ90"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+    <script src="js/script.js"></script> <!-- Linking JavaScript file -->
+
+</body>
+
+</html>
