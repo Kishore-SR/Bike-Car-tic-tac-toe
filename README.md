@@ -1,4 +1,4 @@
-# BikeCar - Tic Tac Toe
+# Tic Tac Toe
 This is a special customized bike-car version of Tic Tac Toe. In this version, you can play in two different modes. Plus, if you win with a car or a bike, you'll learn a fun fact about cars or bikes!
 
 [![Play Now](https://img.shields.io/badge/Play%20Now-green?style=for-the-badge&logo=googlechrome&logoColor=white)](https://bike-car.web.app)
