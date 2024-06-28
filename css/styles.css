@@ -145,7 +145,7 @@ button {
   right: 10px;
   cursor: pointer;
 }
-/* info popup starts */
+/* info popup ends */
 
 /* result box starts */
 #resultPopup {
@@ -164,7 +164,7 @@ button {
   color: rgb(73, 72, 72);
   border-radius: 6px;
 }
-/* result box starts */
+/* result box ends */
 
 /* Media Queries for Mobiles */
 @media (max-width: 768px) {
